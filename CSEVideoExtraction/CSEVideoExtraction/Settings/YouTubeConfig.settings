@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CSEVideoExtraction.Settings" GeneratedClassName="YouTubeConfig">
+  <Profiles />
+  <Settings>
+    <Setting Name="YouTubeChannel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">UCfSiYryINctnCaKe-jilVeA</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

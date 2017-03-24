@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CSEVideoExtraction.Settings" GeneratedClassName="APISettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="API_KEY" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AIzaSyCn2WcoIo_UxzIICdNTEfS32mN9AkshAhw</Value>
+    </Setting>
+    <Setting Name="GET_CHANNEL_UPLOAD_ID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">channels?id=#CHANNEL_ID#&amp;key=#API_KEY#&amp;part=contentDetails</Value>
+    </Setting>
+    <Setting Name="GET_PLAYLIST_ITEMS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">playlistItems?playlistId=#UPLOAD_ID#&amp;key=#API_KEY#&amp;part=snippet,contentDetails&amp;maxResults=50&amp;pageToken=#PAGE_TOKEN#</Value>
+    </Setting>
+    <Setting Name="GET_VIDEO_DETAILS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">videos?part=snippet,contentDetails&amp;id=#VIDEO_ID#&amp;key=#API_KEY#</Value>
+    </Setting>
+    <Setting Name="API_BASE_URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://www.googleapis.com/youtube/v3/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
