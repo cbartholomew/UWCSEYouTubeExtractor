@@ -1,0 +1,7 @@
+c:\users\bartc\documents\visual studio 2013\Projects\CSEVideoExtraction\CSEVideoExtraction\bin\Debug\CSEVideoExtraction.exe.config
+C:\Users\bartc\Documents\GitHub\UWCSEYouTubeExtractor\CSEVideoExtraction\CSEVideoExtraction\bin\Debug\CSEVideoExtraction.exe.config
+C:\Users\bartc\Documents\GitHub\UWCSEYouTubeExtractor\CSEVideoExtraction\CSEVideoExtraction\bin\Debug\CSEVideoExtraction.exe
+C:\Users\bartc\Documents\GitHub\UWCSEYouTubeExtractor\CSEVideoExtraction\CSEVideoExtraction\bin\Debug\CSEVideoExtraction.pdb
+C:\Users\bartc\Documents\GitHub\UWCSEYouTubeExtractor\CSEVideoExtraction\CSEVideoExtraction\obj\Debug\CSEVideoExtraction.csprojResolveAssemblyReference.cache
+C:\Users\bartc\Documents\GitHub\UWCSEYouTubeExtractor\CSEVideoExtraction\CSEVideoExtraction\obj\Debug\CSEVideoExtraction.exe
+C:\Users\bartc\Documents\GitHub\UWCSEYouTubeExtractor\CSEVideoExtraction\CSEVideoExtraction\obj\Debug\CSEVideoExtraction.pdb
