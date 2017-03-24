@@ -37,6 +37,5 @@ namespace CSEVideoExtraction.Utility
             jsonStream.Close();
             return obj;
         }
-    }
-    }
+    }    
 }

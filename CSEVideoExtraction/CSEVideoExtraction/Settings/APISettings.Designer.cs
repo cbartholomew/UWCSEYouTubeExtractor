@@ -83,5 +83,17 @@ namespace CSEVideoExtraction.Settings {
                 this["API_BASE_URL"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("playlists?part=snippet&id=#PLAYLIST_ID#&key=#API_KEY#")]
+        public string GET_PLAYLIST_NAME {
+            get {
+                return ((string)(this["GET_PLAYLIST_NAME"]));
+            }
+            set {
+                this["GET_PLAYLIST_NAME"] = value;
+            }
+        }
     }
 }

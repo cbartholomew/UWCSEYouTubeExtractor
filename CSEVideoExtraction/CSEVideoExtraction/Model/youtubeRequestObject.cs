@@ -19,8 +19,8 @@ namespace CSEVideoExtraction.Model
         {
             // get api key on render
             this.key = new Settings.APISettings().API_KEY;
-
             
+
         }
     }
 }

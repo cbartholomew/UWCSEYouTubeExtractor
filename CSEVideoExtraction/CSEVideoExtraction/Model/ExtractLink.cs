@@ -15,6 +15,7 @@ namespace CSEVideoExtraction.Model
             GET_CHANNEL_UPLOAD_ID,
             GET_PLAYLIST_ITEMS,
             GET_VIDEO_DETAILS,
+            GET_PLAYLIST_NAME,
             UNKNOWN
         }
 
@@ -28,8 +29,11 @@ namespace CSEVideoExtraction.Model
                 case "channel":
                     request = REQUEST_TYPES.GET_CHANNEL_UPLOAD_ID;
                     break;
-                case "playlist":
+                case "playlist_items":
                     request = REQUEST_TYPES.GET_PLAYLIST_ITEMS;
+                    break;
+                case "playlist":
+                    request = REQUEST_TYPES.GET_PLAYLIST_NAME;
                     break;
                 case "video":
                     request = REQUEST_TYPES.GET_VIDEO_DETAILS;
@@ -41,7 +45,7 @@ namespace CSEVideoExtraction.Model
             return request;
         }
 
-        private static void GetEndPoint(REQUEST_TYPES requestType,
+        public static void GetEndPoint(REQUEST_TYPES requestType,
                         youtubeRequestObject request)
         {
             string endpoint = new Settings.APISettings().API_BASE_URL;
@@ -86,6 +90,18 @@ namespace CSEVideoExtraction.Model
                         .Replace("#API_KEY#",
                         request.key);
                     break;
+                case REQUEST_TYPES.GET_PLAYLIST_NAME:
+
+                    endpoint = String.Concat(
+                        endpoint, new Settings.APISettings().GET_PLAYLIST_NAME
+                        );
+
+                    endpoint = endpoint
+                        .Replace("#PLAYLIST_ID#",
+                        request.id)
+                        .Replace("#API_KEY#",
+                        request.key);
+                    break;
                 default:
                     break;
             }
@@ -94,10 +110,11 @@ namespace CSEVideoExtraction.Model
             request.endpoint = endpoint;
         }
         
-        public static T MakeAPIRequest<T>(T obj, 
+        public static T MakeAPIRequest<T>( 
             REQUEST_TYPES requestType,
             youtubeRequestObject request)
         {
+            // create new instance of object
             T jsonResponse = Activator.CreateInstance<T>();
 
             // create the request

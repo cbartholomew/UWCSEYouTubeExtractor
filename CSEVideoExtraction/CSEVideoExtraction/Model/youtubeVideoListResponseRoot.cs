@@ -33,7 +33,7 @@ namespace CSEVideoExtraction.Model
         
         public class Snippet
         {
-            public DateTime publishedAt { get; set; }
+            public string publishedAt { get; set; }
             public string channelId { get; set; }
             public string title { get; set; }
             public string description { get; set; }

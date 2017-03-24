@@ -34,5 +34,17 @@ namespace CSEVideoExtraction.Settings {
                 this["YouTubeChannel"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("c:\\temp\\bartholomew\\output.csv")]
+        public string FILE_EXPORT_PATH {
+            get {
+                return ((string)(this["FILE_EXPORT_PATH"]));
+            }
+            set {
+                this["FILE_EXPORT_PATH"] = value;
+            }
+        }
     }
 }

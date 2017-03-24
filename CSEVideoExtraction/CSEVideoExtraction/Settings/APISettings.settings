@@ -17,5 +17,8 @@
     <Setting Name="API_BASE_URL" Type="System.String" Scope="User">
       <Value Profile="(Default)">https://www.googleapis.com/youtube/v3/</Value>
     </Setting>
+    <Setting Name="GET_PLAYLIST_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">playlists?part=snippet&amp;id=#PLAYLIST_ID#&amp;key=#API_KEY#</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

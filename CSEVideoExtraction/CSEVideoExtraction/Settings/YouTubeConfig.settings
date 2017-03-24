@@ -5,5 +5,8 @@
     <Setting Name="YouTubeChannel" Type="System.String" Scope="User">
       <Value Profile="(Default)">UCfSiYryINctnCaKe-jilVeA</Value>
     </Setting>
+    <Setting Name="FILE_EXPORT_PATH" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\temp\bartholomew\output.csv</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

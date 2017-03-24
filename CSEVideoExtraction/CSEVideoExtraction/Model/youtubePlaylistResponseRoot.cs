@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSEVideoExtraction.Model
 {
-    public class youtubePlaylistItemListResponseRoot
+    public class youtubePlaylistResponseRoot
     {
         
         public class Rootobject
@@ -17,7 +17,7 @@ namespace CSEVideoExtraction.Model
             public Pageinfo pageInfo { get; set; }
             public Item[] items { get; set; }
         }
-
+        
         public class Pageinfo
         {
             public int totalResults { get; set; }
@@ -35,15 +35,13 @@ namespace CSEVideoExtraction.Model
         
         public class Snippet
         {
-            public string publishedAt { get; set; }
+            public DateTime publishedAt { get; set; }
             public string channelId { get; set; }
             public string title { get; set; }
             public string description { get; set; }
             public Thumbnails thumbnails { get; set; }
             public string channelTitle { get; set; }
-            public string playlistId { get; set; }
-            public int position { get; set; }
-            public Resourceid resourceId { get; set; }
+            public Localized localized { get; set; }
         }
         
         public class Thumbnails
@@ -90,16 +88,15 @@ namespace CSEVideoExtraction.Model
             public int height { get; set; }
         }
         
-        public class Resourceid
+        public class Localized
         {
-            public string kind { get; set; }
-            public string videoId { get; set; }
+            public string title { get; set; }
+            public string description { get; set; }
         }
         
         public class Contentdetails
         {
-            public string videoId { get; set; }
-            public string videoPublishedAt { get; set; }
+            public int itemCount { get; set; }
         }
 
     }
